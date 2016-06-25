@@ -1,16 +1,8 @@
 ---
-layout: post
-title:  "Project Title"
-date:   2016-04-25
-excerpt: "First Project"
-project: true
-tag:
-- jekyll 
-- moon
-- blog
-- about
-- theme
-comments: true
+layout: project
+title: All Projects
+excerpt: "A List of Projects"
+comments: false
 ---
 
 #Project 1
