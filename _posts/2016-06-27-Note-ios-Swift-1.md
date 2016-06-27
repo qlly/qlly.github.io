@@ -15,7 +15,7 @@ comments: true
 ### 1）Cocoa Touch
 iOS的最上层，应用程序界面上的各种组件都是由它来提供的。而且还负责与用户的交互操作，例如处理屏幕上的多点触摸事件，文字图片的显示，文件的存取等等。
 <figure>
-    <a href="/assets/img/iOS-Lesson1/1.png"></a>
+    <img src="/assets/img/iOS-Lesson1/1.png">
 </figure>
 
 
