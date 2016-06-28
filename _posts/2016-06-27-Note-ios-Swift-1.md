@@ -57,6 +57,54 @@ Core OS是最底层，包含了iOS的一些基础功能，例如硬件驱动，�
     <img src="/assets/img/iOS-Lesson1/5.png">
 </figure>
 
+# Demo -- 制作一个计算器
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/6.png">
+</figure>
+
+### 通过Demo可以学习：
+·在Xcode中建立一个项目
+·制作UI，并使它自适应画面
+·使用iOS Simulator
+·使用‘println’指令（新版修改为‘print’）
+·用Swift定义一个class（类）
+·建立UI组件和Swift代码中变量的联系
+·建立UI组件和Swift代码中函数的联系
+·从代码查看iOS帮助文档
+·Optional类型
+
+### 步骤
+
+1）打开Xcode，新建一个项目
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/7.png">
+</figure>
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/8.png">
+</figure>
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/9.png">
+</figure>
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/10.png">
+</figure>
+
+项目创建成功后，会出现如下画面。<br>
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/11.png">
+</figure>
+
+2）编辑应用界面
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/12.png">
+</figure>
 
 
 
