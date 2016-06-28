@@ -48,10 +48,10 @@ Core OS是最底层，包含了iOS的一些基础功能，例如硬件驱动，�
 
 # Platform Components -- 开发中需要什么？开发平台组成
 
-工具：Xcode
-语言：Swift，Objective-C （课程中使用Swift）
-框架：Foundation（基础功能），UIkit（UI界面），Core Data，Map Kit等等
-设计模式：MVC（将应用程序分成三个核心部件：Model 模型，View 视图，Controller 控制器）
+工具：Xcode <br>
+语言：Swift，Objective-C （课程中使用Swift）<br>
+框架：Foundation（基础功能），UIkit（UI界面），Core Data，Map Kit等等 <br>
+设计模式：MVC（将应用程序分成三个核心部件：Model 模型，View 视图，Controller 控制器）<br>
 
 <figure>
     <img src="/assets/img/iOS-Lesson1/5.png">
