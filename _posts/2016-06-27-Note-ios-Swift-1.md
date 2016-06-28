@@ -12,9 +12,9 @@ comments: true
 
 # What's in iOS? -- iOS有些什么？简述iOS的四层结构
 
-iOS整个系统的架构由下面的四层构成。进行iOS的开发，首先应从最上层（Cocoa Touch）开始入手，可以实现基本的交互功能。当需要进行多媒体的处理时，再往下层去寻找相关的构架来实现所需的功能。
+iOS整个系统的架构由下面的四层构成。进行iOS的开发，首先应从最上层（Cocoa Touch）开始入手，当需要进行多媒体的处理时，再往下层去寻找相关的构架来实现所需的功能。
 
-##### 1）Cocoa Touch
+### 1）Cocoa Touch
 
 iOS的最上层，应用程序界面上的各种组件都是由它来提供的。而且还负责与用户的交互操作，例如处理屏幕上的多点触摸事件，文字图片的显示，文件的存取等等。
 
@@ -22,7 +22,7 @@ iOS的最上层，应用程序界面上的各种组件都是由它来提供的�
     <img src="/assets/img/iOS-Lesson1/1.png">
 </figure>
 
-##### 2）Media
+### 2）Media
 
 媒体层，主要提供图形，音频，视频等多媒体功能。
 
@@ -30,7 +30,7 @@ iOS的最上层，应用程序界面上的各种组件都是由它来提供的�
     <img src="/assets/img/iOS-Lesson1/2.png">
 </figure>
 
-##### 3）Core Services
+### 3）Core Services
 
 Core Services包含了Foundation.Framework和Core Foundation.Framework。提供了处理字符串，时间日历等基本功能，另外还提供安全性管理，GPS定位等其他功能。
 
@@ -38,12 +38,26 @@ Core Services包含了Foundation.Framework和Core Foundation.Framework。提供�
     <img src="/assets/img/iOS-Lesson1/3.png">
 </figure>
 
-##### 4）Core OS
+### 4）Core OS
 
 Core OS是最底层，包含了iOS的一些基础功能，例如硬件驱动，内存管理，网络等等。
 
 <figure>
     <img src="/assets/img/iOS-Lesson1/4.png">
 </figure>
+
+# Platform Components -- 开发中需要什么？开发平台组成
+
+工具：Xcode
+语言：Swift，Objective-C （课程中使用Swift）
+框架：Foundation（基础功能），UIkit（UI界面），Core Data，Map Kit等等
+设计模式：MVC（将应用程序分成三个核心部件：Model 模型，View 视图，Controller 控制器）
+
+<figure>
+    <img src="/assets/img/iOS-Lesson1/5.png">
+</figure>
+
+
+
 
 
