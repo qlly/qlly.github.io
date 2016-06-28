@@ -12,98 +12,38 @@ comments: true
 
 # What's in iOS? -- iOS有些什么？简述iOS的四层结构
 
+iOS整个系统的架构由下面的四层构成。进行iOS的开发，首先应从最上层（Cocoa Touch）开始入手，可以实现基本的交互功能。当需要进行多媒体的处理时，再往下层去寻找相关的构架来实现所需的功能。
+
 ##### 1）Cocoa Touch
 
 iOS的最上层，应用程序界面上的各种组件都是由它来提供的。而且还负责与用户的交互操作，例如处理屏幕上的多点触摸事件，文字图片的显示，文件的存取等等。
-
-![]("qlly.github.io/assets/img/iOS-Lesson1/1.png")
 
 <figure>
     <img src="/assets/img/iOS-Lesson1/1.png">
 </figure>
 
+##### 2）Media
 
-#### One Up
+媒体层，主要提供图形，音频，视频等多媒体功能。
 
 <figure>
-	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
+    <img src="/assets/img/iOS-Lesson1/2.png">
 </figure>
 
-Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.
+##### 3）Core Services
 
-#### Two Up
+Core Services包含了Foundation.Framework和Core Foundation.Framework。提供了处理字符串，时间日历等基本功能，另外还提供安全性管理，GPS定位等其他功能。
 
-Apply the `half` class like so to display two images side by side that share the same caption.
-
-{% highlight html %}
-<figure class="half">
-    <a href="/images/image-filename-1-large.jpg"><img src="/images/image-filename-1.jpg"></a>
-    <a href="/images/image-filename-2-large.jpg"><img src="/images/image-filename-2.jpg"></a>
-    <figcaption>Caption describing these two images.</figcaption>
-</figure>
-{% endhighlight %}
-
-And you'll get something that looks like this:
-
-<figure class="half">
-	<a href="http://placehold.it/1200x600.JPG"><img src="http://placehold.it/600x300.jpg"></a>
-	<a href="http://placehold.it/1200x600.jpeg"><img src="http://placehold.it/600x300.jpg"></a>
-	<figcaption>Two images.</figcaption>
+<figure>
+    <img src="/assets/img/iOS-Lesson1/3.png">
 </figure>
 
-#### Three Up
+##### 4）Core OS
 
-Apply the `third` class like so to display three images side by side that share the same caption.
+Core OS是最底层，包含了iOS的一些基础功能，例如硬件驱动，内存管理，网络等等。
 
-{% highlight html %}
-<figure class="third">
-	<img src="/images/image-filename-1.jpg">
-	<img src="/images/image-filename-2.jpg">
-	<img src="/images/image-filename-3.jpg">
-	<figcaption>Caption describing these three images.</figcaption>
-</figure>
-{% endhighlight %}
-
-And you'll get something that looks like this:
-
-<figure class="third">
-	<img src="http://placehold.it/600x300.jpg">
-	<img src="http://placehold.it/600x300.jpg">
-	<img src="http://placehold.it/600x300.jpg">
-	<figcaption>Three images.</figcaption>
+<figure>
+    <img src="/assets/img/iOS-Lesson1/4.png">
 </figure>
 
-### Alternative way
 
-Another way to achieve the same result is to include `gallery` Liquid template. In this case you
-don't have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
-and fill the block with any number of links to images. You can mix relative and external links.
-
-Here is the block you might want to use:
-
-{% highlight liquid %}
-{% raw %}
-{% capture images %}
-	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
-	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
-	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
-{% endcapture %}
-{% include gallery images=images caption="Test images" cols=3 %}
-{% endraw %}
-{% endhighlight %}
-
-Parameters:
-
-- `caption`: Sets the caption under the gallery (see `figcaption` HTML tag above);
-- `cols`: Sets the number of columns of the gallery.
-Available values: [1..3].
-
-It will look something like this:
-
-{% capture images %}
-	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
-	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
-	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
-{% endcapture %}
-{% include gallery images=images caption="Test images" cols=3 %}
