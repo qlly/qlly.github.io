@@ -101,7 +101,7 @@ Core OS是最底层，包含了iOS的一些基础功能，例如硬件驱动，�
     <img src="/assets/img/iOS-Lesson1/11.png">
 </figure>
 
-2）编辑应用界面
+双击main.storyboard,打开UI编辑界面。<br>
 
 <figure>
     <img src="/assets/img/iOS-Lesson1/12.png">
